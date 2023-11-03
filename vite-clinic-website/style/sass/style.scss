@@ -1,0 +1,20 @@
+// Color Palette
+$colors: (
+    primary: hsl(216, 67%, 43%),
+    secondary: hsl(206, 62%, 65%),
+    tertiary: hsl(215, 7%, 65%),
+    text-data: hsl(195, 46%, 5%),
+    text-light: hsl(0, 0%, 94%)
+);
+
+// Font Sizes
+
+@import "./base/normalize.scss";
+@import "./base/base.scss";
+@import "library/hamburgers-settings.scss";;
+@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
+h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+}
