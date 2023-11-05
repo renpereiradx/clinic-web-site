@@ -8,6 +8,20 @@ $colors: (
 );
 
 // Font Sizes
+$font-sizes: (
+    small: 1.2rem,
+    medium: 1.6rem,
+    large: 2.4rem,
+    x-large: 3.2rem,
+    xx-large: 4.8rem
+);
+
+// Font Families
+/*$font-families: (
+    primary: 'Quicksand', sans-serif,
+    secondary: 'Noto Sans', sans-serif
+);*/
+
 
 @import "./base/normalize.scss";
 @import "./base/base.scss";
@@ -17,4 +31,9 @@ $colors: (
 h1 {
     font-family: 'Noto Sans', sans-serif;
     font-weight: bold;
+    font-size: map-get($font-sizes, x-large);
 }
+
+p {
+    font-size: map-get($font-sizes, medium);
+}	
