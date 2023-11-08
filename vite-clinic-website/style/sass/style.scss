@@ -17,11 +17,8 @@ $font-sizes: (
 );
 
 // Font Families
-/*$font-families: (
-    primary: 'Quicksand', sans-serif,
-    secondary: 'Noto Sans', sans-serif
-);*/
-
+$primary-font: 'Noto Sans', sans-serif;
+$secondary-font: 'Noto Serif', serif;
 
 @import "./base/normalize.scss";
 @import "./base/base.scss";
@@ -36,4 +33,9 @@ h1 {
 
 p {
     font-size: map-get($font-sizes, medium);
-}	
+}
+
+.material-icons-outlined {
+    font-size: map-get($font-sizes, xx-large);
+    color: map-get($colors, primary);
+}

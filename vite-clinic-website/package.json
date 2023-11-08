@@ -7,13 +7,14 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "phoenix" : "rm -f package-lock.json && rm -rf ./node_modules && npm i --no-fund --no-audit"
+    "phoenix": "rm -f package-lock.json && rm -rf ./node_modules && npm i --no-fund --no-audit"
   },
   "devDependencies": {
     "sass": "^1.69.5",
     "vite": "^4.4.5"
   },
   "dependencies": {
-    "hamburgers": "^1.2.1"
+    "hamburgers": "^1.2.1",
+    "material-icons": "^1.13.12"
   }
 }
