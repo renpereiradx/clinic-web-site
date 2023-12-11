@@ -1,0 +1,49 @@
+.header__menu {
+    display: flex;
+    justify-content: flex-end;
+  
+    .header__nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 85vw;
+        height: 100vh;
+        background-color: whitesmoke;
+        visibility: hidden;
+        opacity: 0;
+        transform: scale(0);
+        transform-origin: right top;
+        transition: all 0.3s ease-in-out;
+    
+        &-list {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 1rem;
+        }
+
+        &.visible {
+            visibility: visible;
+            opacity: 1;
+            transform: scale(1);
+        
+        }
+    }
+
+    &-button {
+        padding-right: 0.2rem;
+        .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+            width: 2.5rem;
+            background-color: white;
+        }
+
+        &.is-active {
+            position: absolute;
+            top: 0.5rem;
+            .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+                background-color: map-get($colors, primary);
+                width: 2.5rem;
+            }
+        }
+    }
+}
