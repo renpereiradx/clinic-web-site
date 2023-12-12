@@ -1,7 +1,5 @@
 .header__menu {
-    display: flex;
-    justify-content: flex-end;
-  
+
     .header__nav {
         position: absolute;
         top: 0;
@@ -16,10 +14,31 @@
         transition: all 0.3s ease-in-out;
     
         &-list {
+            display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
+            justify-content: start;
+            align-items: flex-start;
+            height: 100%;
             padding: 0.5rem 1rem;
+        }
+
+        &-item {
+            margin: 0.5rem 0;
+            padding: 1rem;
+            font-size: map-get($font-sizes, medium);
+            font-weight: 700;
+            color: map-get($colors, text-data);
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: map-get($colors, secondary);
+            }
+        }
+
+        &-link {
+            text-decoration: none;
+            color: inherit;
         }
 
         &.visible {
@@ -31,18 +50,15 @@
     }
 
     &-button {
-        padding-right: 0.2rem;
         .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-            width: 2.5rem;
             background-color: white;
         }
 
         &.is-active {
             position: absolute;
-            top: 0.5rem;
+            top: 0.3rem;
             .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
                 background-color: map-get($colors, primary);
-                width: 2.5rem;
             }
         }
     }

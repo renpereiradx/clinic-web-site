@@ -22,6 +22,7 @@ $secondary-font: 'Noto Serif', serif;
 
 @import "./base/normalize.scss";
 @import "./base/base.scss";
+@import "library/hamburgers-settings.scss";
 @import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
 @import "layout/header.scss";
 @import "module/header-menu.scss";
