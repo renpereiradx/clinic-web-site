@@ -39,8 +39,13 @@
               <a class="header__nav-link" href="#">Especialidades</a>
             </li>
             <li class="header__nav-item header__nav-item--dropdown">
-              <a class="header__nav-link" href="#">Doctores</a>
-              <ul class="header__nav-sublist">
+              <div class="header__nav-item-container">
+                <a class="header__nav-link" href="#">Doctores</a>
+                <svg id="doctorsNavItemArrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="header__nav-item-arrow w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>                
+              </div>
+              <ul id="doctorsNavList" class="header__nav-sublist">
                 <li class="header__nav-subitem">
                   <a class="header__nav-sublink" href="#">Nacho Perez</a>
                 </li>
@@ -68,14 +73,15 @@
     <main class="main-content">
       <section class="hero">
         <div class="hero__content">
-          <h1 class="hero__title">Bienvenido a Clinic Medical</h1>
+          <h1 class="hero__title">Clinic Medical</h1>
           <p class="hero__subtitle">
             La mejor atención médica para ti y tu familia
           </p>
-          <a class="hero__view-specialties button" href="#"
-            >Ver especialidades</a
-          >
-          <a class="hero__cta button" href="#">Agenda tu cita</a>
+          <div class="hero__button-container">
+            <a class="hero__view-specialties button button--primary" href="#"
+              >Ver especialidades</a>
+            <a class="hero__cta button button--secondary" href="#">Agendamiento</a>
+          </div>
         </div>
       </section>
       <!-- Seccion en donde se muestra informacion sobre horarios de apertura y cierre de la clinica, horario de doctores, y un numero de telefono en caso de emergencia -->

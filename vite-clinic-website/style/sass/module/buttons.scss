@@ -1,0 +1,22 @@
+.button {
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 1rem 1rem;
+  font-size: map-get($font-sizes, medium);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button--primary {
+  color: map-get($colors, primary);
+  background-color: map-get($colors, text-light);
+}
+
+.button--secondary {
+  color: map-get($colors, text-light);
+  border-style: solid;
+  border-width: 0.1rem;
+}

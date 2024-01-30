@@ -1,65 +1,125 @@
 .header__menu {
+  .header__nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 85vw;
+    height: 100vh;
+    background-color: whitesmoke;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: right top;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
 
-    .header__nav {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 85vw;
-        height: 100vh;
-        background-color: whitesmoke;
-        visibility: hidden;
-        opacity: 0;
-        transform: scale(0);
-        transform-origin: right top;
+    &-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-start;
+      height: 100%;
+      padding: 0.5rem 1rem;
+    }
+
+    &-item {
+      margin: 0.3rem 0;
+      padding: 1rem;
+      font-size: map-get($font-sizes, large);
+      font-weight: 700;
+      color: map-get($colors, text-data);
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: map-get($colors, secondary);
+      }
+    }
+
+    &-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    &-item--dropdown {
+      padding-bottom: 0;
+      .header__nav-item-container {
+        display: flex;
+        align-items: center;
+        a {
+          display: flex;
+          align-items: center;
+          height: auto;
+          width: auto;
+          margin: 0;
+          margin-bottom: 0.3rem;
+        }
+        .header__nav-item-arrow {
+          height: 2rem;
+          width: 2rem;
+          margin-left: 1rem;
+          transform: rotate(0);
+          transition: all 0.1s ease-in-out;
+          &.is-active {
+            transform: rotate(90deg);
+          }
+        }
+      }
+      .header__nav-sublist {
+        display: none;
+        padding: 0.5rem 0.5rem;
         transition: all 0.3s ease-in-out;
-    
-        &-list {
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            align-items: flex-start;
-            height: 100%;
-            padding: 0.5rem 1rem;
+        list-style: none;
+
+        .header__nav-subitem {
+          margin: 0.2rem 0;
+          padding: 0.3rem;
+          font-size: map-get($font-sizes, large);
+          font-weight: 400;
+          color: map-get($colors, text-data);
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: map-get($colors, secondary);
+          }
         }
-
-        &-item {
-            margin: 0.5rem 0;
-            padding: 1rem;
-            font-size: map-get($font-sizes, medium);
-            font-weight: 700;
-            color: map-get($colors, text-data);
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-
-            &:hover {
-                color: map-get($colors, secondary);
-            }
+        .header__nav-sublink {
+          text-decoration: none;
+          color: inherit;
         }
-
-        &-link {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        &.visible {
-            visibility: visible;
-            opacity: 1;
-            transform: scale(1);
-        
-        }
-    }
-
-    &-button {
-        .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-            background-color: white;
-        }
-
         &.is-active {
-            position: absolute;
-            top: 0.3rem;
-            .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-                background-color: map-get($colors, primary);
-            }
+          display: flex;
+          flex-direction: column;
+          opacity: 1;
         }
+      }
     }
+
+    &.visible {
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &-button {
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      background-color: hsl(0, 0, 100%);
+    }
+    z-index: 100;
+
+    &.is-active {
+      position: absolute;
+      top: 0.5rem;
+      right: 0.3rem;
+      .hamburger-inner,
+      .hamburger-inner::before,
+      .hamburger-inner::after {
+        background-color: map-get($colors, primary);
+      }
+    }
+  }
 }

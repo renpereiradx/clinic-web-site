@@ -1,43 +1,48 @@
 // Color Palette
 $colors: (
-    primary: hsl(216, 67%, 43%),
-    secondary: hsl(206, 62%, 65%),
-    tertiary: hsl(215, 7%, 65%),
-    text-data: hsl(195, 46%, 5%),
-    text-light: hsl(0, 0%, 94%)
+  primary: hsl(216, 67%, 43%),
+  secondary: hsl(206, 62%, 65%),
+  tertiary: hsl(215, 7%, 65%),
+  text-data: hsl(195, 46%, 5%),
+  text-light: hsl(0, 0%, 100%),
 );
 
 // Font Sizes
 $font-sizes: (
-    small: 1.2rem,
-    medium: 1.6rem,
-    large: 2.4rem,
-    x-large: 3.2rem,
-    xx-large: 4.8rem
+  x-small: 0.8rem,
+  small: 1rem,
+  medium: 1.4rem,
+  large: 1.8rem,
+  x-large: 2.4rem,
+  xx-large: 3.8rem,
+  xxx-large: 4.2rem,
 );
 
 // Font Families
 $primary-font: 'Noto Sans', sans-serif;
 $secondary-font: 'Noto Serif', serif;
 
-@import "./base/normalize.scss";
-@import "./base/base.scss";
-@import "library/hamburgers-settings.scss";
-@import "../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
-@import "layout/header.scss";
-@import "module/header-menu.scss";
+@import './base/normalize.scss';
+@import './base/base.scss';
+@import 'library/hamburgers-settings.scss';
+@import '../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
+@import 'layout/header.scss';
+@import 'layout/main-content.scss';
+@import 'module/header-menu.scss';
+@import 'module/main-hero.scss';
+@import 'module/buttons.scss';
 
 h1 {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: bold;
-    font-size: map-get($font-sizes, x-large);
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  font-size: map-get($font-sizes, x-large);
 }
 
 p {
-    font-size: map-get($font-sizes, medium);
+  font-size: map-get($font-sizes, medium);
 }
 
 .material-icons-outlined {
-    font-size: map-get($font-sizes, xx-large);
-    color: map-get($colors, primary);
+  font-size: map-get($font-sizes, xx-large);
+  color: map-get($colors, primary);
 }
