@@ -20,6 +20,7 @@
       align-items: flex-start;
       height: 100%;
       padding: 0.5rem 1rem;
+      list-style: none;
     }
 
     &-item {
@@ -107,7 +108,7 @@
     .hamburger-inner,
     .hamburger-inner::before,
     .hamburger-inner::after {
-      background-color: hsl(0, 0, 100%);
+      background-color: hsl(0, 0%, 100%);
     }
     z-index: 100;
 

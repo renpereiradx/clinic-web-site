@@ -1,9 +1,9 @@
 // Color Palette
 $colors: (
-  primary: hsl(216, 67%, 43%),
+  primary: hsl(216, 68%, 51%),
   secondary: hsl(206, 62%, 65%),
   tertiary: hsl(215, 7%, 65%),
-  text-data: hsl(195, 46%, 5%),
+  text-data: hsl(240, 5%, 34%),
   text-light: hsl(0, 0%, 100%),
 );
 
@@ -22,15 +22,27 @@ $font-sizes: (
 $primary-font: 'Noto Sans', sans-serif;
 $secondary-font: 'Noto Serif', serif;
 
+// Gutters
+$gutters: (
+  small: 1rem,
+  medium: 1.5rem,
+  large: 2rem,
+  x-large: 3rem,
+  xx-large: 4rem,
+);
+
 @import './base/normalize.scss';
 @import './base/base.scss';
 @import 'library/hamburgers-settings.scss';
 @import '../../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss';
+@import 'layout/body.scss';
 @import 'layout/header.scss';
 @import 'layout/main-content.scss';
+@import 'layout/main-content-info.scss';
 @import 'module/header-menu.scss';
 @import 'module/main-hero.scss';
 @import 'module/buttons.scss';
+@import 'module/main-content-info.scss';
 
 h1 {
   font-family: 'Noto Sans', sans-serif;

@@ -1,13 +1,14 @@
 .button {
   display: inline-block;
-  margin-right: 1rem;
-  padding: 1rem 1rem;
-  font-size: map-get($font-sizes, medium);
+  margin-right: map-get($gutters, small);
+  padding: 0.9rem;
+  font-size: map-get($font-sizes, small);
   font-weight: 600;
   border-radius: 0.5rem;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
 .button--primary {
@@ -16,7 +17,7 @@
 }
 
 .button--secondary {
-  color: map-get($colors, text-light);
+  color: inherit;
   border-style: solid;
   border-width: 0.1rem;
 }

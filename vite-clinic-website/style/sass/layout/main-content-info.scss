@@ -1,0 +1,12 @@
+.main-content__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 90%;
+  top: -3rem;
+  left: calc((100% - 90%) / 2);
+  z-index: 40;
+}

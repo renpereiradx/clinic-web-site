@@ -21,12 +21,12 @@
 
   <body>
     <header class="header">
-       <!-- LOGO -->
-       <img
-       class="header__logo"
-       src="./invert-logo.webp"
-       alt="logo de la empresa"
-     />
+      <!-- LOGO -->
+      <img
+        class="header__logo"
+        src="./invert-logo.webp"
+        alt="logo de la empresa"
+      />
       <!-- MENU CONTAINER -->
       <div class="header__menu">
         <!-- NAV MENU -->
@@ -41,9 +41,21 @@
             <li class="header__nav-item header__nav-item--dropdown">
               <div class="header__nav-item-container">
                 <a class="header__nav-link" href="#">Doctores</a>
-                <svg id="doctorsNavItemArrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="header__nav-item-arrow w-6 h-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                </svg>                
+                <svg
+                  id="doctorsNavItemArrow"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="header__nav-item-arrow w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
               </div>
               <ul id="doctorsNavList" class="header__nav-sublist">
                 <li class="header__nav-subitem">
@@ -63,7 +75,10 @@
           </ul>
         </nav>
         <!-- HAMBURGER BUTTON -->
-        <button class="header__menu-button hamburger hamburger--squeeze" type="button">
+        <button
+          class="header__menu-button hamburger hamburger--squeeze"
+          type="button"
+        >
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
@@ -79,8 +94,11 @@
           </p>
           <div class="hero__button-container">
             <a class="hero__view-specialties button button--primary" href="#"
-              >Ver especialidades</a>
-            <a class="hero__cta button button--secondary" href="#">Agendamiento</a>
+              >Ver especialidades</a
+            >
+            <a class="hero__cta button button--secondary" href="#"
+              >Agendamiento</a
+            >
           </div>
         </div>
       </section>
@@ -88,26 +106,62 @@
       <section class="main-content__info">
         <!-- Opening hours -->
         <div class="main-content__info-opening-hours">
-          <h2 class="main-content__info-title">Horario de apertura</h2>
-          <p class="main-content__info-text">
-            Lunes a Viernes: 8:00 am - 7:00 pm
+          <h2 class="main-content__info-title">Horarios de Apertura</h2>
+          <p class="main-content__info-text text--secondary">
+            <span>Lunes a Viernes: </span><span>8:00 am - 7:00 pm</span>
           </p>
-          <p class="main-content__info-text">Sabados: 8:00 am - 2:00 pm</p>
+          <p class="main-content__info-text text--secondary">
+            <span>Sabados: </span><span>8:00 am - 2:00 pm</span>
+          </p>
         </div>
         <!-- Doctors Timetable -->
         <div class="main-content__info-doctors-timetable">
-          <h2 class="main-content__info-title">Horario de doctores</h2>
+          <h2 class="main-content__info-title">Horario de Doctores</h2>
           <p class="main-content__info-text">
             Suscipit illum maxime exercitationem, quis quidem amet laborum unde
             consequuntur praesentium ducimus culpa commodi id quo? Tenetur sint
             voluptatem a odit iusto.
           </p>
-          <a class="main-content__info-link" href="#">View Timetable</a>
+          <a class="main-content__info-link button button--secondary" href="#"
+            ><span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                />
+              </svg> </span
+            ><span>Ver Horarios</span></a
+          >
         </div>
         <!-- Emergency cases -->
         <div class="main-content__info-emergency-cases">
-          <h2 class="main-content__info-title">Cases de Emergencias</h2>
-          <p class="main-content__info-text">555-555-5555</p>
+          <h2 class="main-content__info-title">Casos de Emergencias</h2>
+          <p class="main-content__info-text">
+            <span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                />
+              </svg> </span
+            ><span>555-555-5555</span>
+          </p>
           <p class="main-content__info-text">
             Pariatur dolorem iure placeat sunt? Praesentium aperiam, nulla porro
             ipsam, commodi, veritatis dignissimos ducimus sequi pariatur vel
@@ -428,30 +482,23 @@
           <!-- Email -->
           <div>
             <form action="">
-              <input type="text">
+              <input type="text" />
             </form>
-            <span class="material-icons-outlined">
-              email
-            </span>
+            <span class="material-icons-outlined"> email </span>
           </div>
           <!-- Social networks -->
           <div>
-            <span class="material-icons-outlined">
-              facebook
-            </span>
-            <span class="material-icons-outlined">
-              instagram
-            </span>
-            <span class="material-icons-outlined">
-              twitter
-            </span>
+            <span class="material-icons-outlined"> facebook </span>
+            <span class="material-icons-outlined"> instagram </span>
+            <span class="material-icons-outlined"> twitter </span>
+          </div>
         </div>
       </div>
       <!-- Second block - Medical Clinic logo-why us?, departments links head office info, quick links -->
       <div>
         <!-- Medical Clinic logo-why us? -->
         <div>
-          <img src="./invert-logo.webp" alt="">
+          <img src="./invert-logo.webp" alt="" />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
             voluptatum.

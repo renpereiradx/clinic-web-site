@@ -1,0 +1,134 @@
+.main-content__info {
+  background-color: whitesmoke;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 95%;
+    margin-bottom: 3rem;
+    padding: 0.5rem;
+
+    &::after {
+      content: '';
+      display: block;
+      position: relative;
+      width: 100%;
+      height: 0.8rem;
+      background-color: map-get($colors, secondary);
+      top: 2rem;
+      left: 0;
+      z-index: -1;
+    }
+  }
+
+  &-title {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: map-get($gutters, medium) 0;
+    font-family: $primary-font;
+    font-size: map-get($font-sizes, x-large);
+    font-weight: 500;
+    color: map-get($colors, secondary);
+    text-align: left;
+  }
+
+  &-text {
+    display: inline-block;
+    width: 100%;
+    margin: map-get($gutters, medium) 0;
+    font-size: map-get($font-sizes, medium);
+    color: map-get($colors, text-data);
+    line-height: 1.9rem;
+  }
+
+  .text--secondary {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    font-weight: 700;
+
+    span:last-child {
+      color: map-get($colors, secondary);
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: relative;
+      top: map-get($gutters, medium);
+      left: 0;
+      width: 100%;
+      height: 0.1rem;
+      background-color: map-get($colors, tertiary);
+      opacity: 0.2;
+      z-index: -1;
+    }
+  }
+
+  &-link {
+    display: inline-flex;
+    justify-content: center;
+    width: 20rem;
+    margin: 0 0 map-get($gutters, small) 0;
+    padding: map-get($gutters, medium);
+    font-size: map-get($font-sizes, medium);
+    font-weight: 700;
+    color: map-get($colors, secondary);
+    text-decoration: none;
+    cursor: pointer;
+
+    span:nth-child(1) {
+      display: inline-flex;
+      margin: 0;
+      padding: 0 map-get($gutters, medium) 0 0;
+      color: map-get($colors, secondary);
+
+      svg {
+        width: map-get($font-sizes, medium);
+        height: map-get($font-sizes, medium);
+        flex-grow: 2;
+      }
+    }
+    span:nth-child(2) {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  div:nth-child(3) {
+    p:first-of-type {
+      display: inline-flex;
+      justify-content: start;
+      width: auto;
+      margin: 0;
+      padding: map-get($gutters, medium) 0;
+      font-size: map-get($font-sizes, medium);
+
+      span:first-child {
+        display: inline-block;
+        margin: 0;
+        padding: 0 map-get($gutters, medium) 0 0;
+        color: map-get($colors, secondary);
+
+        svg {
+          width: map-get($font-sizes, xx-large);
+          height: map-get($font-sizes, xx-large);
+          color: map-get($colors, primary);
+        }
+      }
+      span:last-child {
+        display: inline-flex;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        font-size: map-get($font-sizes, x-large);
+        font-weight: 700;
+        color: map-get($colors, text-data);
+      }
+    }
+  }
+}
