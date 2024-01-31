@@ -1,0 +1,6 @@
+.service {
+  display: flex;
+  flex-direction: column;
+  padding: map-get($gutters, x-large) map-get($gutters, medium) 0
+    map-get($gutters, medium);
+}

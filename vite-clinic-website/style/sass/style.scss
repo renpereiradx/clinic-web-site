@@ -16,6 +16,7 @@ $font-sizes: (
   x-large: 2.4rem,
   xx-large: 3.8rem,
   xxx-large: 4.2rem,
+  mega: 5.6rem,
 );
 
 // Font Families
@@ -24,11 +25,14 @@ $secondary-font: 'Noto Serif', serif;
 
 // Gutters
 $gutters: (
+  x-small: 0.5rem,
   small: 1rem,
   medium: 1.5rem,
   large: 2rem,
   x-large: 3rem,
   xx-large: 4rem,
+  xxx-large: 5rem,
+  mega: 6rem,
 );
 
 @import './base/normalize.scss';
@@ -39,10 +43,12 @@ $gutters: (
 @import 'layout/header.scss';
 @import 'layout/main-content.scss';
 @import 'layout/main-content-info.scss';
+@import 'layout/main-services.scss';
 @import 'module/header-menu.scss';
 @import 'module/main-hero.scss';
 @import 'module/buttons.scss';
 @import 'module/main-content-info.scss';
+@import 'module/main-services.scss';
 
 h1 {
   font-family: 'Noto Sans', sans-serif;

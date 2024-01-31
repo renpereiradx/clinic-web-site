@@ -1,0 +1,43 @@
+.service {
+  &__title {
+    font-size: map-get($font-sizes, x-large);
+    font-weight: 700;
+    margin: 0 0 map-get($gutters, xxx-large) 0;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 7rem;
+      height: 0.3rem;
+      background-color: map-get($colors, primary);
+      margin-top: map-get($gutters, large);
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: map-get($gutters, medium);
+    margin-bottom: map-get($gutters, x-large);
+  }
+
+  .material-icons-outlined {
+    font-size: map-get($font-sizes, mega);
+    color: map-get($colors, secondary);
+  }
+
+  &__subtitle {
+    margin: 0;
+    font-size: map-get($font-sizes, large);
+    font-weight: 600;
+  }
+
+  &__description {
+    margin: 0;
+    font-size: map-get($font-sizes, medium);
+    font-weight: 400;
+    line-height: 1.5;
+    color: map-get($colors, text-data);
+    text-align: justify;
+  }
+}
