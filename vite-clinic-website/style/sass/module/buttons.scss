@@ -1,6 +1,6 @@
 .button {
   display: inline-block;
-  margin-right: map-get($gutters, small);
+  margin-right: map-get($gutters, x-small);
   padding: 0.9rem;
   font-size: map-get($font-sizes, small);
   font-weight: 600;
@@ -8,7 +8,7 @@
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.2rem;
 }
 
 .button--primary {
@@ -17,6 +17,7 @@
 }
 
 .button--secondary {
+  width: 20rem;
   color: inherit;
   border-style: solid;
   border-width: 0.1rem;

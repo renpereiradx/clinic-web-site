@@ -72,7 +72,6 @@
   &-link {
     display: inline-flex;
     justify-content: center;
-    width: 20rem;
     margin: 0 0 map-get($gutters, small) 0;
     padding: map-get($gutters, medium);
     font-size: map-get($font-sizes, medium);

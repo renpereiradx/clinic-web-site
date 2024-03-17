@@ -41,6 +41,10 @@
       text-align: start;
       line-height: 3rem;
     }
+
+    &__cta {
+      width: fit-content;
+    }
   }
   .hero::before {
     content: '';

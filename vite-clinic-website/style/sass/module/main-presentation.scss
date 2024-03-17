@@ -1,0 +1,35 @@
+.presentation {
+  background-color: darkgray;
+
+  &__logo {
+    margin: map-get($gutters, x-large) 0;
+  }
+
+  &__title {
+    margin-top: map-get($gutters, medium);
+    margin-bottom: map-get($gutters, x-large);
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: map-get($gutters, x-large);
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: map-get($gutters, x-large);
+  }
+
+  &__link {
+    margin: 0;
+    margin-bottom: map-get($gutters, medium);
+    padding: map-get($gutters, large);
+    background-color: map-get($colors, text-light);
+    border-color: map-get($colors, text-light);
+    text-align: center;
+    font-size: map-get($font-sizes, medium);
+    font-weight: 700;
+    text-decoration: none;
+    color: map-get($colors, secondary);
+  }
+}
