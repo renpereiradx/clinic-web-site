@@ -21,3 +21,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  font-size: map-get($font-sizes, x-large);
+}
+
+p {
+  font-size: map-get($font-sizes, medium);
+}

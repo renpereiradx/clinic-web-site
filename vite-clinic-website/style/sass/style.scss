@@ -44,6 +44,7 @@ $gutters: (
 @import 'layout/main-content.scss';
 @import 'layout/main-content-info.scss';
 @import 'layout/main-services.scss';
+@import './layout/main-departments.scss';
 @import 'module/header-menu.scss';
 @import 'module/main-hero.scss';
 @import 'module/buttons.scss';
@@ -51,17 +52,7 @@ $gutters: (
 @import 'module/main-services.scss';
 @import 'layout/main-presentation.scss';
 @import 'module/main-presentation.scss';
-
-
-h1 {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: bold;
-  font-size: map-get($font-sizes, x-large);
-}
-
-p {
-  font-size: map-get($font-sizes, medium);
-}
+@import './module/main-departments.scss';
 
 .material-icons-outlined {
   font-size: map-get($font-sizes, xx-large);
